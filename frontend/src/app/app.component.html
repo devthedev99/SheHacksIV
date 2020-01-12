@@ -1,0 +1,14 @@
+<!-- nav -->
+<nav class="navbar navbar-expand navbar-dark bg-dark" >
+    <div class="navbar-nav">
+        <a class="nav-item nav-link" routerLink="/">Home</a>
+        <a class="nav-item nav-link" routerLink="/checkup">Checkup</a>
+        <a class="nav-item nav-link" routerLink='/signup'>Sign Up</a>
+        <a class="nav-item nav-link" (click)="logout()" *ngIf="isPatient || isDoctor">Logout</a>
+    </div>
+  </nav>
+  
+  <!-- main app container -->
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>

@@ -1,0 +1,20 @@
+<h2>Checkup</h2>
+
+<form #editfrm = "ngForm" (ngSubmit)="editSong(editfrm)" >
+        <h2>Enter Patient Information</h2>
+        <div class="form-group">
+            <label for="">
+                Check 1: 
+            </label>
+            <input type="text" name="check1" value="" > <br/>
+            <label for="">
+                Check 2: 
+            </label>
+            <input type="text" name="check2" value="" > <br/>
+            <label for="">
+                Check 3: 
+            </label>
+            <input type="text" name="check3" value=""> <br/>
+        </div>
+        <button type="submit" name="button">Save</button>
+    </form> <br/><br/>
