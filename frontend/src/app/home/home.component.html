@@ -1,9 +1,9 @@
 <div class="card mt-4">
     <h4 class="card-header">Home</h4>
     <div class="card-body">
-        <p>Your role is: <strong>{{currentUser.role}}</strong>.</p>
-        <p>This page can be accessed by <u>all authenticated users</u>.</p>
-        <p class="mb-1">Current user from secure api end point:</p>
+        <p style="color: white;">Your role is: <strong>{{currentUser.role}}</strong>.</p>
+        <p style="color: white;">This page can be accessed by <u>all authenticated users</u>.</p>
+        <p class="mb-1" style="color: white;">Current user from secure api end point:</p>
         <div *ngIf="loading" class="spinner-border spinner-border-sm"></div>
         <ul *ngIf="userFromApi">
             <li>{{userFromApi.firstName}} {{userFromApi.lastName}}</li>

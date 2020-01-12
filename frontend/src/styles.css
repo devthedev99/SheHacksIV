@@ -7,7 +7,7 @@ a { cursor: pointer }
 /* BASIC */
 
 html {
-  background-color: #56baed;
+  background-color:green;
 }
 
 body {
@@ -16,7 +16,7 @@ body {
 }
 
 a {
-  color: #92badd;
+  color: green;
   display:inline-block;
   text-decoration: none;
   font-weight: 400;
@@ -48,7 +48,7 @@ h2 {
 #formContent {
   -webkit-border-radius: 10px 10px 10px 10px;
   border-radius: 10px 10px 10px 10px;
-  background: #fff;
+  background: green;
   padding: 30px;
   width: 90%;
   max-width: 450px;
@@ -285,8 +285,8 @@ label.validation-message{
 
 
 .alert {
-  padding: 20px;
-  background-color: #f44336; /* Red */
+  padding: 2px;
+  background-color: green; /* Red */
   color: white;
   margin-bottom: 15px;
 }
@@ -313,7 +313,7 @@ label.validation-message{
 }
  
 th {
-  color:#D5DDE5;;
+  color:#D5DDE5;
   background:#1b1e24;
   border-bottom:4px solid #9ea7af;
   border-right: 1px solid #343a45;
@@ -336,7 +336,7 @@ th:last-child {
   
 tr {
   border-top: 1px solid #C1C3D1;
-  border-bottom-: 1px solid #C1C3D1;
+  border-bottom: 1px solid #C1C3D1;
   color:#666B85;
   font-size:16px;
   font-weight:normal;
