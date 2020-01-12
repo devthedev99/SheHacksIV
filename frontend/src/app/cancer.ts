@@ -1,7 +1,7 @@
 export class Cancer {
-    radius: String; 
+    radius: Number; 
     texture: String; 
-    area: String; 
-    density: String; 
+    area: Number; 
+    density: Number; 
     compactness: String; 
 }

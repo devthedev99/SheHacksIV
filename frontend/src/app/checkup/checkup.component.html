@@ -2,30 +2,31 @@
 
 <form #frm = "ngForm" (ngSubmit)="showResults(frm)" >
         <h2 style="color: green;">Enter Patient Information</h2>
+        <button style="size: 0.5px;">Input Image</button>
         <div class="form-group" style="color: green;">
             <label for="">
                 Radius: 
             </label>
-            <input type="text" name="radius" value=""> <br/>
+            <input type="text" name="radius" value="" ngModel required> <br/>
             <label for="">
                 Texture: 
             </label>
-            <input type="text" name="texture" value="" > <br/>
+            <input type="text" name="texture" value="" ngModel required> <br/>
             <label for="">
                 Area:    
             </label>
-            <input type="text" name="area" value=""> <br/>
+            <input type="text" name="area" value="" ngModel required> <br/>
             <label for="">
                 Density: 
             </label>
-            <input type="text" name="density" value=""> <br/>
+            <input type="text" name="density" value="" ngModel required> <br/>
             <label for="">
                 Compactness: 
             </label>
-            <input type="text" name="compactness" value=""> <br/>
+            <input type="text" name="compactness" value="" ngModel required> <br/>
         </div>
-        <button type="submit" name="button" style="background-color: green; color: white" >Results</button>
-        <button type="submit" name="button" style="background-color: green; color: white" *ngIf="toggleReset" click="disableReset()">Reset</button>
+        <button type="submit" name="button" style="background-color: lightgreen; color: white" [disabled]="clicked"><a href="https://colab.research.google.com/drive/1Qm0-WEGx1UJIGtM8yMf7TzvM2nYTzW_d#scrollTo=Qe8nKs976jBG&uniqifier=2">Results</a></button>
+        <button type="submit" name="button" style="background-color: lightgreen; color: black" *ngIf="toggleReset" click="disableReset()">Reset</button>
     </form> <br/><br/>
 
     

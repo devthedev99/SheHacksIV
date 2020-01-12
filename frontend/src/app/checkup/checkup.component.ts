@@ -14,6 +14,7 @@ export class CheckupComponent implements OnInit {
   toggleReset: boolean = false; 
   toggleForm: boolean = false; 
   result: String = "";
+  clicked: Boolean = true; 
 
   constructor(private dataService: DataService, private authenticationService: AuthenticationService) { }
 
@@ -22,9 +23,11 @@ export class CheckupComponent implements OnInit {
 
   disableReset() {
     this.toggleReset = false; 
+    this.clicked = true; 
   }
 
   showResults(form) {
+    this.clicked = false; 
     this.toggleReset = !this.toggleReset; 
     let newResults: Cancer = {
       radius: form.value.radius, 
@@ -34,7 +37,7 @@ export class CheckupComponent implements OnInit {
       compactness: form.value.compactness
     }
 
-    if (newResults.density != null ) {
+    if (newResults.density > 5 || newResults.area > 5 || newResults.radius > 5 ) {
       this.result = "malignant";
     }
     else {

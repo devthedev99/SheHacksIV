@@ -1,12 +1,9 @@
 <div class="card mt-4">
     <h4 class="card-header">Home</h4>
     <div class="card-body">
-        <p style="color: white;">Your role is: <strong>{{currentUser.role}}</strong>.</p>
-        <p style="color: white;">This page can be accessed by <u>all authenticated users</u>.</p>
-        <p class="mb-1" style="color: white;">Current user from secure api end point:</p>
-        <div *ngIf="loading" class="spinner-border spinner-border-sm"></div>
-        <ul *ngIf="userFromApi">
-            <li>{{userFromApi.firstName}} {{userFromApi.lastName}}</li>
-        </ul>
+        <img src="../../assets/img/logo2.png" alt="CANDETECH" style="width: 50%; align-self: center;">
+        <br/>
+        <h2>Mission Statement: </h2>
+        <p style="background-color: white; text-align: justify;">In Canada, 1 in 3 of all new cases of cancer are skin cancers and that rate is on the rise. Skin cancer is not only one of the most common types of cancer, it is also one of the most preventable, detectable, and treatable. Our solution is CANDETECH (Cancer Detection Technology) – an app that (1) helps doctors identify benign (i.e. not harmful) vs malignant (i.e. harmful) skin cancer lesions and (2) allows patients to prevent against skin cancer through push notifications and prevention tips. CANDETECH for physicians works by using Google Cloud API to compare an image of a skin lesion against a database of benign skin cancers and malignant skin cancers. The app then determines whether that particular image is BENIGN or MALIGNANT based on machine learning through AutoML Vision. CANDETECH for patients includes push notification reminders of daily UV ray levels, sunscreen application, and skin cancer prevention tips. CANDETECH is also available as a website for physicians and dermatologists. As a team of newer hackers, we used Google Cloud, Python, and Visual Studio Code to build a product that incorporates health, green, Google Cloud, well-being, and design.</p>
     </div>
 

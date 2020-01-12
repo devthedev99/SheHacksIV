@@ -3,9 +3,10 @@
     <div class="navbar-nav" style="background-color: green;">
         <a class="nav-item nav-link" routerLink="/" style="color: white;">Home</a>
         <a class="nav-item nav-link" routerLink="/checkup" style="color: white;" *ngIf="isPatient || isDoctor">diagnosASSIST</a>
-        <a class="nav-item nav-link" routerLink='/signup' style="color: white;">Sign Up</a>
+        <a class="nav-item nav-link" routerLink='/signup' style="color: white;" *ngIf="!(isPatient || isDoctor)">Sign Up</a>
         <a class="nav-item nav-link" (click)="logout()" *ngIf="isPatient || isDoctor" style="color: white;">Logout</a>
     </div>
+    <img src="/logo2.png" alt="">
   </nav>
   
   <!-- main app container -->
