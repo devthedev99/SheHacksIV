@@ -1,12 +1,12 @@
-<h2 style="color: green;">Checkup</h2>
+<h2 style="color: green;">diagnosASSIST</h2>
 
-<form #editfrm = "ngForm" (ngSubmit)="editSong(editfrm)" >
+<form #frm = "ngForm" (ngSubmit)="showResults(frm)" >
         <h2 style="color: green;">Enter Patient Information</h2>
         <div class="form-group" style="color: green;">
             <label for="">
                 Radius: 
             </label>
-            <input type="text" name="radius" value="" > <br/>
+            <input type="text" name="radius" value=""> <br/>
             <label for="">
                 Texture: 
             </label>
@@ -24,5 +24,11 @@
             </label>
             <input type="text" name="compactness" value=""> <br/>
         </div>
-        <button type="submit" name="button" style="background-color: green; color: white">Save</button>
+        <button type="submit" name="button" style="background-color: green; color: white" >Results</button>
+        <button type="submit" name="button" style="background-color: green; color: white" *ngIf="toggleReset" click="disableReset()">Reset</button>
+    </form> <br/><br/>
+
+    
+    <form #results = "ngForm" (ngSubmit)="showResults(results)" *ngIf="toggleForm">
+        <h2 style="color: white;">Result: {{result}}</h2>
     </form> <br/><br/>
